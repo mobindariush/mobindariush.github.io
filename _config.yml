@@ -80,13 +80,12 @@ analytics:
 
 # Site Author
 author:
-  name             : "Mobin Dariush-Hamedani"
-  avatar           : "profile.png"
-  bio              : "Undergraduate computer engineering student at Iran University of Science and Technology, interested in systems and algorithms."
+  name             : "Mobin</br>Dariush-Hamedani"
+  avatar           : "profile.jpg"
+  bio              : "Interested in algorithms and their usage in software systems."
 
   location         : "Tehran, Iran"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   email            : "mobindariush@outlook.com"
   uri              :
   bitbucket        :
@@ -101,8 +100,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "https://www.linkedin.com/in/mobindariush"
-  orcid            : "http://orcid.org/yourorcidurl"
+  linkedin         : "mobindariush"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
@@ -185,7 +183,9 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
-
+  project:
+    output: true
+    permalink: /:collection/:path/
 
 # Defaults
 defaults:
@@ -216,6 +216,13 @@ defaults:
       author_profile: true
       share: true
       comments: true
+  # _project
+  - scope:
+      path: ""
+      type: project
+    values:
+      layout: single
+      author_profile: true
   # _publications
   - scope:
       path: ""
